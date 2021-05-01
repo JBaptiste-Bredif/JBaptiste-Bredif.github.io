@@ -1,0 +1,405 @@
+/* body */
+
+#container {
+  width: 80%;
+  margin-left: 10%;
+  font-family: "Raleway", Arial, sans-serif;
+}
+.hebergementContain {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 600px;
+}
+/* section hébergement */
+
+#zoneHebergement {
+  width: 63%;
+  height: 100%;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding-left: 2.5%; /* voir comment faire pour supprimer ça ( flex / column  ect */
+  padding-right: 2.5%;
+}
+#hebergementFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hebergement {
+  background-color: white;
+  width: 30%;
+  padding: 5px;
+  border-radius: 20px;
+  margin-bottom: 3%; /* voir si possible de s'en passer avec une meilleure gestion mais pas grave dans l'imédiat*/
+  box-shadow: 0px 0px 20px #00000060;
+}
+.hebergement img {
+  width: 100%;
+  height: 120px; /* passer en % en définissant taille du parent*/
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+
+#messageAfficherPlus {
+  margin-left: 2px;
+  font-weight: bold;
+}
+
+/* section hébergement populaire */
+#zoneHebergementPopulaire {
+  background-color: #f2f2f2;
+  width: 28%;
+  height: 100%;
+  border-radius: 20px;
+  padding-left: 0.5%; /*voir changement possible*/
+  padding-right: 0.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#titreZonePopulaire {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: 11%;
+}
+#hebergementPopulaireFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 85%;
+}
+.hebergementPopulaire {
+  background-color: white;
+  width: 85%;
+  height: 28%;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #00000060;
+  display: flex;
+}
+.hebergementPopulaire img {
+  width: 35%;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+  object-fit: cover;
+}
+
+.conteneurInfo {
+  margin-left: 5px;
+  width: 70%;
+  height: 100%;
+  margin-top: 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Section Activité */
+#activite {
+  margin-bottom: 2%;
+}
+#containerActivite {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 550px;
+}
+.zoneActivite {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.activite {
+  width: 48%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #00000060;
+  display: flex;
+  margin-right: 6%;
+}
+
+.imageActivite {
+  width: 100%;
+  height: 90%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+
+.petiteActivite {
+  width: 48%;
+  height: 48%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #00000060;
+  display: flex;
+}
+
+.imagePetiteActivite {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+/* à voir si changement */
+/* .centrageActivite {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.taillePetitCentrage {
+  height: 20%;
+}
+.tailleCentrage {
+  height: 10%;
+} */
+.zoneActivite h3 {
+  margin: 5%; /*Voir comment ça se comporte en responsive*/
+}
+/* Class Outils //////////////////*/
+.p-margin {
+  margin: 4px;
+}
+.h3-margin {
+  margin: 0px 0px 0px 4px;
+}
+.activite:hover,
+.petiteActivite:hover,
+.hebergement:hover,
+.hebergementPopulaire:hover {
+  transform: scale(1.05);
+}
+.linkNoStyle {
+  text-decoration: none;
+  color: black;
+}
+.note-margin {
+  margin-left: 2px;
+}
+
+/* couleur des étoiles */
+.blue {
+  color: #0065fc;
+}
+
+.grey {
+  color: #d6d6d6; /* #f2f2f2 */
+}
+
+/* FOOTER à rendre plus reponsive  */
+footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+#zoneFooter {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  padding: 20px;
+}
+
+.footerPart {
+  margin-right: 15%;
+}
+footer h3 {
+  margin-left: 39px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-top: 10px;
+}
+/* HEADER */
+#navigation {
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+}
+nav li {
+  display: flex;
+  margin-right: 80px;
+  height: 100%;
+  align-items: center;
+}
+nav ul a {
+  display: flex;
+  align-items: center;
+  color: black;
+  height: 100%;
+  text-decoration: none;
+  border-top: 2px solid white; /* Pour éviter le décalage en hover */
+}
+nav li a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+
+h1 {
+  font-size: 1.3em;
+  margin-bottom: -10px; /* peut être remove plus tard pour le responsive */
+}
+
+/*Permet de faire un rond autour du I et de le centrer*/
+.rond {
+  height: 30px; /* responsive remake */
+  width: 30px; /* responsive remake */
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; /* responsive remake */
+}
+/*évite le retour à la ligne pour la phrase*/
+.rondFlex {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* responsive remake */
+  margin-bottom: 20px;
+}
+
+/*PARTIE FILTRE*/
+.containerFiltre {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+#filtres {
+  margin-right: 2%;
+  margin-bottom: 2.5%;
+}
+.filtre {
+  display: flex;
+  align-items: center;
+  border: 2px solid #d9d9d9;
+  border-radius: 30px;
+  margin-right: 2%; /* peut être une solution différente avec flex */
+  margin-bottom: 1%; /* trouver une solution flex */
+  font-weight: bold;
+}
+.filtre:hover {
+  background-color: #d1e0f8;
+}
+.filtreIcone {
+  background-color: #d1e0f8;
+  border-radius: 100%;
+  min-height: 50px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+}
+
+.filtreTitre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; /* voire les amélio possible*/
+}
+
+.formulaire {
+  max-width: 100%;
+  margin-bottom: 15px; /*pas très responsive*/
+}
+.formulaireIcone {
+  background-color: #f2f2f2;
+  padding: 16px;
+  border-radius: 15px 0px 0px 15px;
+  text-align: center;
+}
+
+.champSaisi {
+  border-right: none;
+  border-left: none;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
+  padding: 16px;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.champSaisi::placeholder {
+  color: black;
+  font-family: "Raleway", Arial, sans-serif;
+}
+.boutonRecherche {
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  padding: 16px;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1em;
+}
+
+@media all and (max-width: 1024px) {
+  #container {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .containerFiltre {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .hebergementContain {
+    flex-direction: column-reverse;
+    align-content: space-between;
+    height: 1200px;
+    margin-top: 10px;
+  }
+  #zoneHebergementPopulaire {
+    width: 100%;
+    height: 40%;
+  }
+
+  .conteneurInfo {
+    margin: 0;
+  }
+
+  #titreZonePopulaire {
+    width: 95%;
+  }
+
+  .hebergementPopulaire {
+    height: 28%;
+    width: 95%;
+  }
+
+  #zoneHebergement {
+    width: 95%;
+    height: 70%;
+    padding-left: 2.5%; /* voir comment faire pour supprimer ça ( flex / column  ect */
+    padding-right: 0.5%;
+  }
+
+  .hebergement {
+    width: 45%;
+  }
+}
