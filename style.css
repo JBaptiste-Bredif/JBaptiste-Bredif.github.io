@@ -482,6 +482,10 @@ h1 {
     margin-left: 5%;
   }
 
+  #messageAfficherPlus {
+    margin-top: -3%;
+  }
+
   .hebergement {
     width: 100%;
     margin-bottom: 8%;
