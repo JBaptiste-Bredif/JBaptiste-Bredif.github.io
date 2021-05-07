@@ -64,10 +64,13 @@ body {
 }
 
 #titreZonePopulaire {
-  display: flex;
-  justify-content: space-between;
   width: 85%;
   height: 11%;
+}
+
+#titreZonePopulaire h2 {
+  display: flex;
+  justify-content: space-between;
 }
 
 #hebergementPopulaireFlex {
@@ -360,7 +363,7 @@ h1 {
   font-size: 1em;
 }
 /*tablette*/
-@media all and (max-width: 1270px) {
+@media all and (max-width: 1300px) {
   #container {
     width: 95%;
     margin-left: 2.5%;
