@@ -181,7 +181,7 @@ body {
 }
 
 .grey {
-  color: #d6d6d6; /* #f2f2f2 */
+  color: #d6d6d6;
 }
 
 /* FOOTER */
@@ -307,10 +307,10 @@ h1 {
   margin-top: 10px;
 }
 .filtre:hover {
-  background-color: #d1e0f8;
+  background-color: #deebff;
 }
 .filtreIcone {
-  background-color: #d1e0f8;
+  background-color: #deebff;
   border-radius: 100%;
   min-height: 50px;
   min-width: 50px;
@@ -481,7 +481,7 @@ h1 {
 
   #zoneHebergement {
     width: 100%;
-    height: 1500px;
+    height: 1550px;
     justify-content: space-around;
   }
 
@@ -489,13 +489,13 @@ h1 {
     margin-left: 5%;
   }
 
-  #messageAfficherPlus {
-    margin-top: -3%;
-  }
-
   .hebergement {
     width: 100%;
     margin-bottom: 7%;
+  }
+
+  .hebergement:last-child {
+    margin-bottom: 4%;
   }
 
   .rechercheBarre {
@@ -558,5 +558,12 @@ h1 {
   .containerFiltre {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .hebergement:last-child {
+    margin-bottom: 9%;
+  }
+
+  #zoneHebergement {
+    height: 1500px;
   }
 }
