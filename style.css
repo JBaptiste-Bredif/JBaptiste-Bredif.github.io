@@ -258,6 +258,10 @@ h1 {
 }
 
 /* Section Activité */
+#activite a {
+  width: 100%;
+}
+
 #activite {
   margin-top: 30px;
   font-size: 0.9em;
